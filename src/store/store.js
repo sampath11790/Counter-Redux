@@ -2,10 +2,10 @@ import { createStore } from "redux";
 // const { default: Counter } = require('../components/Counter')
 const countReducer = (state = { Counter: 0 }, action) => {
   if (action.type === "increment") {
-    return { Counter: state.Counter + 1 };
+    return { Counter: state.Counter + 5 };
   }
   if (action.type === "decrement") {
-    return { Counter: state.Counter - 1 };
+    return { Counter: state.Counter - 5 };
   }
   return state;
 };
